@@ -62,10 +62,11 @@ All the best ✨.
 *Add your video here, and your approach to the problem (optional). Leave some comments for us here if you want, we will be reading this :)*
 ## Video
 
-<video width="600" controls>
-  <source src="https://github.com/StackItHQ/pes-sidd2305/raw/main/demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+https://github.com/user-attachments/assets/9b933e05-7a3c-4d04-9e31-4dcb06f393d3
+
+
+
 
 ## Project Approach and Functions
 
