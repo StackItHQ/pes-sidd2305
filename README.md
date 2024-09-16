@@ -49,7 +49,7 @@ We have a checklist at the bottom of this README file, which you should update a
 - [ ] I have recorded a video showing it working and embedded it in the README ▶️
 - [x] I have tested all the normal working cases 😎
 - [ ] I have even solved some edge cases (brownie points) 💪
-- [ ] I added my very planned-out approach to the problem at the end of this README 📜
+- [x] I added my very planned-out approach to the problem at the end of this README 📜
 
 ## Got Questions❓
 Feel free to check the discussions tab, you might get some help there. Check out that tab before reaching out to us. Also, did you know, the internet is a great place to explore? 😛
@@ -60,3 +60,49 @@ All the best ✨.
 
 ## Developer's Section
 *Add your video here, and your approach to the problem (optional). Leave some comments for us here if you want, we will be reading this :)*
+
+## Project Approach and Functions
+
+## Project Approach
+In this project, I implemented a real-time synchronization system between Google Sheets and SQLite using Streamlit, enabling seamless data flow and ensuring consistency across both platforms. By utilizing the Google Sheets API and SQLite database, I created a solution that detects changes in either platform and updates the other accordingly, using hash-based change detection. I integrated CRUD operations to manage data across both systems and designed a periodic monitoring process to automate updates every 10 seconds. This project deepened my understanding of API integration, database synchronization, and real-time data management within web applications.
+
+##Functions
+- connect_to_db(): Creates and returns a connection to the SQLite database.
+- create_table(): Creates a table in the SQLite database if it doesn't already exist.
+- get_sheet_data(): Retrieves all data from Google Sheets using the get_all_values() method.
+- hash_data(data): Generates a hash value of the current data in the sheet.
+- sync_google_sheets_to_sqlite(data): Syncs data from Google Sheets to the SQLite database.
+- batch_sync_sqlite_to_google_sheets(batch_size=100): Syncs data from SQLite back to Google Sheets in batches.
+
+Streamlit App Functions
+- update_data(): Checks for changes in Google Sheets by comparing the current data hash with the stored hash.
+
+Monitoring Changes
+The app allows users to start and stop monitoring changes with buttons. Once monitoring is started, the app checks for changes every 10 seconds and syncs accordingly.
+Buttons in Streamlit UI
+
+- Start/Stop Monitoring Changes: Starts or stops periodic monitoring of data changes in Google Sheets.
+- Show Table Data: Displays the current data stored in the SQLite database in a table format within the app.
+
+## Project Features
+
+The system is designed to meet the following requirements:
+
+### 1. Real-time Synchronization
+
+- Google Sheets → SQLite: Detects changes in Google Sheets and updates the SQLite database accordingly.
+- SQLite → Google Sheets: Detects changes in the SQLite database and updates Google Sheets.
+- The system performs these checks periodically to keep both data sources in sync.
+
+### 2. CRUD Operations
+
+- The system allows for the creation, reading, updating, and deleting of records in both Google Sheets and SQLite database.
+- Data is kept consistent between the two systems to ensure that changes in one are reflected in the other.
+
+###How to Run the Project
+
+Place the credentials.json file (downloaded from Google Cloud) in the root folder.
+Run the Streamlit app by executing the following command:
+
+streamlit run app.py
+
