@@ -48,7 +48,7 @@ We have a checklist at the bottom of this README file, which you should update a
 - [x] My code's working just fine! 🥳
 - [ ] I have recorded a video showing it working and embedded it in the README ▶️
 - [x] I have tested all the normal working cases 😎
-- [ ] I have even solved some edge cases (brownie points) 💪
+- [x] I have even solved some edge cases (brownie points) 💪
 - [x] I added my very planned-out approach to the problem at the end of this README 📜
 
 ## Got Questions❓
@@ -60,6 +60,12 @@ All the best ✨.
 
 ## Developer's Section
 *Add your video here, and your approach to the problem (optional). Leave some comments for us here if you want, we will be reading this :)*
+## Video
+
+<video width="600" controls>
+  <source src="https://github.com/StackItHQ/pes-sidd2305/raw/main/demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Project Approach and Functions
 
