@@ -66,7 +66,7 @@ All the best ✨.
 ## Project Approach
 In this project, I implemented a real-time synchronization system between Google Sheets and SQLite using Streamlit, enabling seamless data flow and ensuring consistency across both platforms. By utilizing the Google Sheets API and SQLite database, I created a solution that detects changes in either platform and updates the other accordingly, using hash-based change detection. I integrated CRUD operations to manage data across both systems and designed a periodic monitoring process to automate updates every 10 seconds. This project deepened my understanding of API integration, database synchronization, and real-time data management within web applications.
 
-##Functions
+## Functions
 - connect_to_db(): Creates and returns a connection to the SQLite database.
 - create_table(): Creates a table in the SQLite database if it doesn't already exist.
 - get_sheet_data(): Retrieves all data from Google Sheets using the get_all_values() method.
@@ -99,7 +99,7 @@ The system is designed to meet the following requirements:
 - The system allows for the creation, reading, updating, and deleting of records in both Google Sheets and SQLite database.
 - Data is kept consistent between the two systems to ensure that changes in one are reflected in the other.
 
-###How to Run the Project
+### How to Run the Project
 
 Place the credentials.json file (downloaded from Google Cloud) in the root folder.
 Run the Streamlit app by executing the following command:
